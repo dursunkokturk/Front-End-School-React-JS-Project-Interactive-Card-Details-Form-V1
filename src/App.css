@@ -37,6 +37,7 @@ body {
 .credit-card-informations .credit-card-name {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .credit-card-informations .credit-card-name label {
