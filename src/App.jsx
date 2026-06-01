@@ -21,6 +21,21 @@ export default function App() {
           <label>KART NUMARASI</label>
           <input type="number" />
         </div>
+        <div className="credit-card-expiration-date">
+          <div className="expiration-date-and-cvc">
+            <div className="expiration-date">
+              <label>SKT (AY/YIL)</label>
+              <div className="expiration-date-month-year">
+                <input type="number" />
+                <input type="number" />
+              </div>
+            </div>
+            <div className="credit-card-cvc">
+              <label>CVC</label>
+              <input type="number" />
+            </div>
+          </div>
+        </div>
       </div>
     </>
   )

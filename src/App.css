@@ -53,3 +53,48 @@ body {
   border-radius: 8px;
   border: 1px solid #DFDEE0;
 }
+
+.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc {
+  display: flex;
+}
+
+.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
+  display: flex;
+}
+
+.credit-card-informations .credit-card-expiration-date {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-card-informations .credit-card-expiration-date label {
+  margin-bottom: 9px;
+}
+
+.credit-card-informations .credit-card-expiration-date .expiration-date input {
+  margin-right: 8px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
+}
+
+.credit-card-informations .credit-card-expiration-date input {
+  width: 72px;
+}
+
+.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc input {
+  width: 164px;
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
+}
