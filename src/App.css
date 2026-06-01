@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Space Grotesk;
+}
+
 .credit-card-visual {
   display: flex;
   position: relative;
@@ -23,4 +27,28 @@
 
   margin-top: 126px;
   margin-left: 16px;
+}
+
+.credit-card-informations {
+  margin-top: 91px;
+  margin-inline: 24px;
+}
+
+.credit-card-informations .credit-card-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.credit-card-informations .credit-card-name label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #21092F;
+  margin-bottom: 9px;
+}
+
+.credit-card-informations .credit-card-name input {
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
 }

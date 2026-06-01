@@ -12,6 +12,12 @@ export default function App() {
         <img src={CreditCardFront} className='credit-card-front' alt="" />
         <img src={MobileBackground} className='mobile-background' alt="" />
       </div>
+      <div className="credit-card-informations">
+        <div className="credit-card-name">
+          <label>KART SAHİBİNİN ADI</label>
+          <input type="text" />
+        </div>
+      </div>
     </>
   )
 }
