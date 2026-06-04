@@ -8,7 +8,12 @@ body {
   font-family: Space Grotesk;
 }
 
-.credit-card-visual {
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper .credit-card-visual {
   display: flex;
   position: relative;
 
@@ -16,13 +21,17 @@ body {
   margin: 0 auto;
 }
 
-.credit-card-visual .mobile-background {
+.page-wrapper .credit-card-visual .mobile-background {
   width: 375px;
   max-width: 100%;
   display: block;
 }
 
-.credit-card-back {
+.page-wrapper .credit-card-visual .desktop-background {
+  display: none;
+}
+
+.page-wrapper .credit-card-visual .credit-card-back {
   position: absolute;
   z-index: 1;
 
@@ -30,7 +39,7 @@ body {
   left: 73px;
 }
 
-.credit-card-front {
+.page-wrapper .credit-card-visual .credit-card-front {
   position: absolute;
   z-index: 2;
 
@@ -38,20 +47,20 @@ body {
   margin-left: 16px;
 }
 
-.credit-card-informations {
+.page-wrapper .credit-card-informations {
   margin-top: 91px;
   max-width: 375px;
   margin-inline: auto;
   padding-inline: 24px;
 }
 
-.credit-card-informations .credit-card-name {
+.page-wrapper .credit-card-informations .credit-card-name {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
 
-.credit-card-informations .credit-card-name label {
+.page-wrapper .credit-card-informations .credit-card-name label {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 2px;
@@ -59,63 +68,64 @@ body {
   margin-bottom: 9px;
 }
 
-.credit-card-informations .credit-card-name input {
+.page-wrapper .credit-card-informations .credit-card-name input {
   padding: 11px 16px;
   border-radius: 8px;
   border: 1px solid #DFDEE0;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc {
   display: flex;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
   display: flex;
   flex-direction: column;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date {
   display: flex;
 }
 
-.credit-card-informations .credit-card-expiration-date {
+.page-wrapper .credit-card-informations .credit-card-expiration-date {
   display: flex;
   flex-direction: column;
 
   margin-bottom: 28px;
 }
 
-.credit-card-informations .credit-card-expiration-date label {
+.page-wrapper .credit-card-informations .credit-card-expiration-date label {
   margin-bottom: 9px;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date .expiration-date-month-year {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date .expiration-date-month-year {
   display: flex;
 }
-.credit-card-informations .credit-card-expiration-date .expiration-date input {
+
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date input {
   margin-right: 8px;
   padding: 11px 16px;
   border-radius: 8px;
   border: 1px solid #DFDEE0;
 }
 
-.credit-card-informations .credit-card-expiration-date input {
+.page-wrapper .credit-card-informations .credit-card-expiration-date input {
   width: 72px;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc {
   display: flex;
   flex-direction: column;
 }
 
-.credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc input {
+.page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc input {
   width: 150px;
   padding: 11px 16px;
   border-radius: 8px;
   border: 1px solid #DFDEE0;
 }
 
-.credit-card-informations button {
+.page-wrapper .credit-card-informations button {
   font-size: 18px;
   font-weight: 500;
 
@@ -125,4 +135,30 @@ body {
   border-radius: 8px;
   border: 1px solid #21092F;
   margin-bottom: 45px;
+}
+
+@media(width>1109px) {
+  .page-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .page-wrapper .credit-card-visual {
+    position: sticky;
+    top: 0;
+    flex: 0 0 483px;
+    height: 100vh;
+    max-width: none;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .page-wrapper .credit-card-visual .mobile-background {
+    display: none;
+  }
+
+  .page-wrapper .credit-card-visual .desktop-background {
+    display: flex;
+    justify-content: flex-start;
+  }
 }
