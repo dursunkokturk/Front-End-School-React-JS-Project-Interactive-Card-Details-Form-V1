@@ -208,7 +208,7 @@ body {
     position: absolute;
     z-index: 2;
 
-    top: 25%;
+    top: 15%;
     left: 5%;
   }
 
@@ -238,17 +238,18 @@ body {
   }
 
   .page-wrapper .credit-card-informations .credit-card-name input {
-    width: 381px;
-    /* border-radius: 8px; */
-    /* border: 1px solid #DFDEE0; */
+    width: 370px;
   }
 
-  
-  .page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date input {
-    margin-right: 8px;
+  .page-wrapper .credit-card-informations .credit-card-number input{
+    width: 370px;
+  }
+  .page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .expiration-date input {
+    /* margin-right: 8px;
     padding: 11px 16px;
     border-radius: 8px;
-    border: 1px solid #DFDEE0;
+    border: 1px solid #DFDEE0; */
+    width: 100px;
   }
 
   .page-wrapper .credit-card-informations .credit-card-expiration-date input {
