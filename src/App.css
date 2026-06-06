@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html,body{
+  height: 100%;
+  overflow: hidden;
+}
 body {
   font-family: Space Grotesk;
 }
@@ -82,6 +86,26 @@ body {
   border: 1px solid #DFDEE0;
 }
 
+.page-wrapper .credit-card-informations .credit-card-number {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.page-wrapper .credit-card-informations .credit-card-number label {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: #21092F;
+  margin-bottom: 9px;
+}
+
+.page-wrapper .credit-card-informations .credit-card-number input {
+  padding: 11px 16px;
+  border-radius: 8px;
+  border: 1px solid #DFDEE0;
+}
+
 .page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc {
   display: flex;
 }
@@ -149,6 +173,10 @@ body {
   .page-wrapper {
     display: flex;
     flex-direction: row;
+
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
   }
 
   .page-wrapper .credit-card-visual {
@@ -195,5 +223,54 @@ body {
 
     top: 469px;
     left: 258px;
+  }
+
+  .page-wrapper .credit-card-informations {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .page-wrapper .credit-card-informations .credit-card-name input {
+    width: 381px;
+    /* border-radius: 8px; */
+    /* border: 1px solid #DFDEE0; */
+  }
+
+  
+  .page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date input {
+    margin-right: 8px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+  }
+
+  .page-wrapper .credit-card-informations .credit-card-expiration-date input {
+    width: 72px;
+  }
+
+  .page-wrapper .credit-card-informations .credit-card-expiration-date .expiration-date-and-cvc .credit-card-cvc input {
+    width: 150px;
+    padding: 11px 16px;
+    border-radius: 8px;
+    border: 1px solid #DFDEE0;
+  }
+
+  .page-wrapper .credit-card-informations button {
+    font-size: 18px;
+    font-weight: 500;
+
+    background-color: #21092F;
+    color: white;
+    padding: 15px 155px;
+    border-radius: 8px;
+    border: 1px solid #21092F;
+    margin-bottom: 0px;
   }
 }

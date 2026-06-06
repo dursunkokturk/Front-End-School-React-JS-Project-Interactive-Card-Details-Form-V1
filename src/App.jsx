@@ -24,7 +24,7 @@ export default function App() {
             <label>KART SAHİBİNİN ADI</label>
             <input type="text" />
           </div>
-          <div className="credit-card-name">
+          <div className="credit-card-number">
             <label>KART NUMARASI</label>
             <input type="number" />
           </div>
