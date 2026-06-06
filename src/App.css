@@ -208,8 +208,8 @@ body {
     position: absolute;
     z-index: 2;
 
-    top: 187px;
-    left: 164px;
+    top: 25%;
+    left: 5%;
   }
 
   .page-wrapper .credit-card-visual .mobile-credit-card-back {
@@ -221,8 +221,8 @@ body {
     position: absolute;
     z-index: 1;
 
-    top: 469px;
-    left: 258px;
+    top: 56%;
+    left: 25%;
   }
 
   .page-wrapper .credit-card-informations {
